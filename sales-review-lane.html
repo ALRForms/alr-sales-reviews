@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sales Review — Lane</title>
+<style>
+  :root{
+    --bg:#F4F2EC; --card:#FFFFFF; --ink:#1E2A30; --muted:#5C6A72;
+    --line:#E3E0D7; --accent:#0E7C7B; --accent-soft:#E3F1F0; --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;padding:0 0 64px;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 18px;}
+  header{background:var(--ink);color:#fff;padding:30px 0 26px;margin-bottom:22px;}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9DB6B5;margin:0 0 8px;}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:30px;line-height:1.15;margin:0 0 10px;font-weight:600;}
+  .job{font-size:15px;color:#C7D2D2;margin:0;}
+  .job strong{color:#fff;font-weight:600;}
+  .banner{background:#FBEFD9;border:1px solid #EAD4A8;color:#7A4D12;border-radius:var(--radius);
+    padding:13px 15px;font-size:14px;margin:0 0 14px;}
+  .banner b{color:#5E3A0C;}
+  .reminder{background:var(--accent-soft);border:1px solid #C5E3E1;border-radius:var(--radius);
+    padding:12px 15px;font-size:13.5px;color:#0B5E5D;margin:0 0 24px;}
+  .reminder b{color:#08403F;}
+  .repname{margin:0 0 26px;}
+  section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px 6px;margin:0 0 18px;}
+  .sec-head{display:flex;align-items:center;gap:11px;margin:0 0 6px;padding:0 0 12px;border-bottom:1px solid var(--line);}
+  .num{flex:none;width:30px;height:30px;border-radius:8px;background:var(--ink);color:#fff;font-size:13px;font-weight:600;
+    display:flex;align-items:center;justify-content:center;}
+  .sec-head h2{font-size:16px;margin:0;font-weight:600;letter-spacing:.01em;}
+  .item{padding:16px 0;border-bottom:1px solid #F0EEE7;}
+  .item:last-child{border-bottom:none;}
+  .q{font-size:15px;font-weight:600;margin:0 0 3px;}
+  .q .desc{font-weight:400;color:var(--muted);}
+  label.f{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:11px 0 5px;}
+  input[type=text],textarea,select{width:100%;font-size:16px;font-family:inherit;color:var(--ink);background:#fff;
+    border:1px solid var(--line);border-radius:10px;padding:11px 12px;-webkit-appearance:none;appearance:none;}
+  textarea{min-height:52px;resize:vertical;}
+  select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235C6A72' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat:no-repeat;background-position:right 12px center;padding-right:36px;}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent);}
+  .submit-row{margin-top:6px;}
+  button{width:100%;font-size:17px;font-weight:600;font-family:inherit;color:#fff;background:var(--accent);
+    border:none;border-radius:12px;padding:16px;cursor:pointer;-webkit-appearance:none;}
+  button:active{background:#0A6362;}
+  .foot{text-align:center;font-size:12.5px;color:var(--muted);margin:16px 0 0;}
+  @media (prefers-reduced-motion: no-preference){button{transition:background .15s ease;}}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">Adaptive Living Renovations</p>
+      <h1>Sales Review</h1>
+      <p class="job"><strong>Lane</strong> &nbsp;·&nbsp; 5532 Ravine Ct., Marysville, CA 95901</p>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="banner"><b>6 items need answers.</b> Fill in everything you can — partial submissions are fine, you can come back and submit again. If something doesn't apply, write <b>N/A or otherwise</b>. Text the PM when it's all filled in.</div>
+    <div class="reminder">📸 <b>Sales reminder:</b> Upload all job <b>photos</b> and <b>drawings</b> to Market Sharp. (Separate from the items below — nothing to fill in here.)</div>
+    <form action="https://script.google.com/macros/s/AKfycbx-iZBuXIpX4lPJbcdd-vFHBa-UI-ejWYj1j47cGEp5OKPxrNAZSJoODFtlq-jGsV7Z/exec" method="POST">
+      <input type="hidden" name="Job" value="Lane" />
+      <div class="repname">
+        <label class="f" for="rep">Your name</label>
+        <input type="text" id="rep" name="Filled out by" autocomplete="name" />
+      </div>
+      <section>
+        <div class="sec-head"><div class="num">01</div><h2>Permit &amp; Contact</h2></div>
+        <div class="item">
+          <p class="q">Permit status <span class="desc">— is a permit required for this job?</span></p>
+          <label class="f">Answer</label>
+          <select name="Permit status — is a permit required? (Yes/No)">
+            <option value="">Select…</option>
+            <option>Yes — permit required</option>
+            <option>No — no permit</option>
+            <option>Unsure</option>
+          </select>
+        </div>
+        <div class="item">
+          <p class="q">Foundation type <span class="desc">— Slab or Raised</span></p>
+          <label class="f">Answer</label>
+          <select name="Foundation type — Slab or Raised">
+            <option value="">Select…</option>
+            <option>Slab</option>
+            <option>Raised</option>
+            <option>Unsure</option>
+          </select>
+        </div>
+      </section>
+      <section>
+        <div class="sec-head"><div class="num">02</div><h2>Shower Walls &amp; Base</h2></div>
+        <div class="item">
+          <p class="q">Shower pan <span class="desc">— size and drain location (center, left-hand, or right-hand). Best Bath, White already confirmed.</span></p>
+          <label class="f">Answer</label>
+          <textarea name="Shower pan — size and drain location (center, left-hand, or right-hand)"></textarea>
+        </div>
+      </section>
+      <section>
+        <div class="sec-head"><div class="num">03</div><h2>Shower System &amp; Door</h2></div>
+        <div class="item">
+          <p class="q">Shower enclosure <span class="desc">— none listed on SOW; which type: fixed glass panel, shower door, or curtain rod? (Barrier-free pan needs one for water management.)</span></p>
+          <label class="f">Answer</label>
+          <textarea name="Shower enclosure — fixed glass panel, shower door, or curtain rod?"></textarea>
+        </div>
+        <div class="item">
+          <p class="q">Gabrylly shower system <span class="desc">— finish/color</span></p>
+          <label class="f">Answer</label>
+          <textarea name="Gabrylly shower system — finish/color"></textarea>
+        </div>
+      </section>
+      <section>
+        <div class="sec-head"><div class="num">04</div><h2>Hardware &amp; Accessories</h2></div>
+        <div class="item">
+          <p class="q">Grab bars <span class="desc">— sizes for all 3 grab bars</span></p>
+          <label class="f">Answer</label>
+          <textarea name="Grab bars — sizes for all 3 grab bars"></textarea>
+        </div>
+      </section>
+      <div class="submit-row">
+        <button type="submit">Submit to PM</button>
+        <p class="foot">Adaptive Living Renovations · Sales Review · Lane</p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
